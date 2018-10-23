@@ -41,7 +41,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--<app-home></app-home>-->\n\n<!--<app-consultation></app-consultation>-->\n\n<app-contracts></app-contracts>\n\n\n\n\n"
+module.exports = "<!--<app-home></app-home>-->\n\n<!--<app-consultation></app-consultation>-->\n\n<!--<app-contracts></app-contracts>-->\n\n<app-batch-proposition></app-batch-proposition>\n\n\n\n"
 
 /***/ }),
 
@@ -111,6 +111,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_pages_contracts_contracts_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/pages/contracts/contracts.component */ "./src/app/components/pages/contracts/contracts.component.ts");
 /* harmony import */ var _components_rating_rating_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/rating/rating.component */ "./src/app/components/rating/rating.component.ts");
 /* harmony import */ var _components_tags_tags_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/tags/tags.component */ "./src/app/components/tags/tags.component.ts");
+/* harmony import */ var _components_pages_batch_proposition_batch_proposition_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/pages/batch-proposition/batch-proposition.component */ "./src/app/components/pages/batch-proposition/batch-proposition.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -128,6 +129,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 // Srvices
 
 // Components
+
 
 
 
@@ -158,7 +160,8 @@ var AppModule = /** @class */ (function () {
                 _components_social_net_social_net_component__WEBPACK_IMPORTED_MODULE_16__["SocialNetComponent"],
                 _components_pages_contracts_contracts_component__WEBPACK_IMPORTED_MODULE_17__["ContractsComponent"],
                 _components_rating_rating_component__WEBPACK_IMPORTED_MODULE_18__["RatingComponent"],
-                _components_tags_tags_component__WEBPACK_IMPORTED_MODULE_19__["TagsComponent"]
+                _components_tags_tags_component__WEBPACK_IMPORTED_MODULE_19__["TagsComponent"],
+                _components_pages_batch_proposition_batch_proposition_component__WEBPACK_IMPORTED_MODULE_20__["BatchPropositionComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -191,7 +194,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n.card-wrapper {\r\n  width: 20em;\r\n}\r\n.mat-card:not([class*=mat-elevation-z]) {\r\n   box-shadow: none;\r\n}\r\n.mat-card-content {\r\n  margin: 0 -24px;\r\n}\r\na {\r\n  margin-left: -8px;\r\n  cursor: pointer;\r\n}\r\n.mat-card-actions a{\r\n  color: #3484C8;\r\n}\r\n.additional a {\r\n  color: black;\r\n  margin-bottom: 1em;\r\n  font-size: 1.125em;\r\n  font-weight: 400;\r\n}\r\n.mat-icon {\r\n  vertical-align: middle;\r\n  margin-left: -8px;\r\n}\r\n.additional {\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n.mat-card-content p.descriptions,\r\n.mat-card-content .title,\r\n.card-actions,\r\n.additional a{\r\n  font-family: \"Segoe UI\", sans-serif !important;\r\n}\r\n.mat-card-content .title {\r\n  font-size: 1.25em;\r\n  font-weight: 600;\r\n}\r\n.mat-card-content p.descriptions {\r\n  font-weight: 100;\r\n  font-size: 1em;\r\n}\r\n.similar-document .title {\r\n  font-weight: 400;\r\n}\r\n.similar-document .mat-card-content {\r\n  height: 2em;\r\n}\r\n.mat-card-actions button {\r\n  color: #3484C8;\r\n  font-weight: 400;\r\n  font-family: \"Segoe UI\";\r\n}\r\n.advice-document .title {\r\n  font-weight: 400;\r\n}\r\n.advice-document .mat-card-actions{\r\n  text-align: center;\r\n}\r\n.first .item-card, .second .item-card, .third .item-card {\r\n  background-color: #F1F1F1;\r\n}\r\n.first .mat-card-content, .second .mat-card-content, .third .mat-card-content {\r\n  margin: 0;\r\n}\r\n.first .mat-card-actions, .second .mat-card-actions, .third .mat-card-actions {\r\n  text-align: center;\r\n}\r\n.card-wrapper .title {\r\n  font-weight: 400;\r\n}\r\n.first {\r\n  border-top: .3125em solid #3484C8;\r\n}\r\n.first .title {\r\n  color: #3484C8;\r\n}\r\n.second {\r\n  border-top: .3125em solid #008F0E;\r\n}\r\n.second .title {\r\n  color: #008F0E;\r\n}\r\n.third {\r\n  border-top: .3125em solid #F30000;\r\n}\r\n.third .title {\r\n  color: #F30000;\r\n}\r\n\r\n\r\n"
+module.exports = "\r\n.card-wrapper {\r\n  width: 100%;\r\n}\r\n.mat-card:not([class*=mat-elevation-z]) {\r\n   box-shadow: none;\r\n}\r\n.mat-card-content {\r\n  margin: 0 -24px;\r\n}\r\na {\r\n  margin-left: -8px;\r\n  cursor: pointer;\r\n}\r\n.mat-card-actions a{\r\n  color: #3484C8;\r\n}\r\n.additional a {\r\n  color: black;\r\n  margin-bottom: 1em;\r\n  font-size: 1.125em;\r\n  font-weight: 400;\r\n}\r\n.mat-icon {\r\n  vertical-align: middle;\r\n  margin-left: -8px;\r\n}\r\n.additional {\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n.mat-card-content p.descriptions,\r\n.mat-card-content .title,\r\n.card-actions,\r\n.additional a{\r\n  font-family: \"Segoe UI\", sans-serif !important;\r\n}\r\n.mat-card-content .title {\r\n  font-size: 1.25em;\r\n  font-weight: 600;\r\n}\r\n.mat-card-content p.descriptions {\r\n  font-weight: 100;\r\n  font-size: 1em;\r\n}\r\n.similar-document .title {\r\n  font-weight: 400;\r\n}\r\n.similar-document .mat-card-content {\r\n  height: 2em;\r\n}\r\n.mat-card-actions button {\r\n  color: #3484C8;\r\n  font-weight: 400;\r\n  font-family: \"Segoe UI\";\r\n}\r\n.advice-document .title {\r\n  font-weight: 400;\r\n}\r\n.advice-document .mat-card-actions{\r\n  text-align: center;\r\n}\r\n.first .item-card, .second .item-card, .third .item-card {\r\n  background-color: #F1F1F1;\r\n}\r\n.first .mat-card-content, .second .mat-card-content, .third .mat-card-content {\r\n  margin: 0;\r\n}\r\n.first .mat-card-actions, .second .mat-card-actions, .third .mat-card-actions {\r\n  text-align: center;\r\n}\r\n.card-wrapper .title {\r\n  font-weight: 400;\r\n}\r\n.first {\r\n  border-top: .3125em solid #3484C8;\r\n}\r\n.first .title {\r\n  color: #3484C8;\r\n}\r\n.second {\r\n  border-top: .3125em solid #008F0E;\r\n}\r\n.second .title {\r\n  color: #008F0E;\r\n}\r\n.third {\r\n  border-top: .3125em solid #F30000;\r\n}\r\n.third .title {\r\n  color: #F30000;\r\n}\r\n.similar-bach-document p.descriptions{\r\n  font-size: .88em;\r\n  color: #3484C8;\r\n}\r\n.similar-bach-document .mat-card-image {\r\n  margin: 0 -24px;\r\n}\r\n.similar-bach-document .mat-card {\r\n  padding: 0 24px;\r\n}\r\n\r\n"
 
 /***/ }),
 
@@ -599,6 +602,266 @@ var MainNavComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/components/pages/batch-proposition/batch-proposition.component.css":
+/*!************************************************************************************!*\
+  !*** ./src/app/components/pages/batch-proposition/batch-proposition.component.css ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".wrapper {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-between;\r\n}\r\n.wrapper-descriptions {\r\n  height: 25.125em;\r\n  width: 100%;\r\n  background-color: #F1F1F1;\r\n  margin: 3em 0;\r\n  position: relative;\r\n  display: flex;\r\n  flex-direction: row;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n  padding: 3em 0;\r\n}\r\n.work-agreement {\r\n  background-color: #F1F1F1;\r\n  padding: 2.125em 0;\r\n}\r\n.description-agreement {\r\n  margin-top: 2em;\r\n  width: 80%;\r\n}\r\n.work-agreement .h1 {\r\n  margin: auto auto .5em;\r\n}\r\n.agreement-row {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-between;\r\n}\r\n.tags {\r\n  margin-top: 1em;\r\n}\r\n.buy-subscription {\r\n  margin-top: 3em;\r\n}\r\n.buy-subscription p{\r\n  margin-bottom: 1em;\r\n}\r\n.work-agreement .img-wrapper {\r\n  width: 18em;\r\n  height: 90%;\r\n  padding: 1em;\r\n  background-color: white;\r\n}\r\n.work-agreement .img-wrapper img {\r\n  width: 100%;\r\n}\r\n.description-title {\r\n  transition: all .3s;\r\n}\r\n.btn-wrapper {\r\n  margin-top: .5em;\r\n}\r\n.btn-wrapper button {\r\n  font-weight: 100;\r\n  color: #0067B8;\r\n  font-size: 1.125em;\r\n}\r\n.btn-wrapper button img {\r\n  width: 1em;\r\n}\r\n.agreement-row .modal-wrapper {\r\n  position: absolute;\r\n  left: 50%;\r\n  top: 50%;\r\n  -webkit-transform: translateX(-50%) translateY(-50%);\r\n          transform: translateX(-50%) translateY(-50%);\r\n\r\n}\r\n.agreement-row .modal-wrapper .h1 {\r\n  color: white;\r\n}\r\n.agreement-row .modal-wrapper .document-items {\r\n  display: flex;\r\n  flex-direction: row;\r\n  align-items: center;\r\n}\r\n.agreement-row .modal-wrapper .arrow-btn {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  color: white;\r\n  width: 16em;\r\n}\r\n.agreement-row .modal-wrapper .material-icons {\r\n  font-size: 2em;\r\n}\r\n.agreement-row .modal-wrapper .mat-fab {\r\n  border: .0625em solid white;\r\n  margin-bottom: 1em;\r\n}\r\n.agreement-row .modal-wrapper .mat-fab.mat-accent {\r\n  background-color: transparent;\r\n\r\n}\r\n.agreement-row .modal-wrapper li img {\r\n  height: 75vh;\r\n}\r\n.action-bay {\r\n  display: flex;\r\n  align-items: center;\r\n}\r\n.action-bay  button {\r\n  background: #0067B8;\r\n  color: white;\r\n  margin-right: 1em;\r\n}\r\n.action-bay a{\r\n  font-weight: 100;\r\n  text-decoration: underline;\r\n  color: #0067B8;\r\n}\r\n.action-bay img{\r\n  width: .5em;\r\n}\r\n.content-wrapper {\r\n  width: 100%;\r\n  height: 100%;\r\n  padding: 1.5em;\r\n}\r\n.title-content {\r\n  font-size: 1.5em;\r\n  font-family: \"Segoe UI\";\r\n  font-weight: 400;\r\n  margin-bottom: 1em;\r\n}\r\n.tringle {\r\n  position: absolute;\r\n  top: -3.125em;\r\n  width: 0;\r\n  height: 0;\r\n  border-left: 3.125em solid transparent;\r\n  border-right: 3.125em solid transparent;\r\n  border-bottom: 3.125em solid #F1F1F1;\r\n  transition: all .3s;\r\n}\r\n.tringle.first {\r\n  left: 6.250em;\r\n}\r\n.tringle.second {\r\n  left: 31.25em;\r\n\r\n}\r\n.tringle.third {\r\n  right: 7.250em;\r\n}\r\n.arrow {\r\n  width: 1.5em;\r\n  height: 5em;\r\n  background-color: #4A4A4A;\r\n  cursor: pointer;\r\n}\r\n.work-agreement .card {\r\n  width: 45%;\r\n  margin:.45em;\r\n}\r\n.work-agreement .img-wrapper .wrapper {\r\n  justify-content: flex-start;\r\n  display: inline-flex;\r\n  flex-wrap: wrap;\r\n}\r\n.similar .card {\r\n  width: 18em;\r\n}\r\n.similar .wrapper {\r\n  justify-content: space-evenly;\r\n}\r\n.advice .card {\r\n  width: 20em;\r\n}\r\n"
+
+/***/ }),
+
+/***/ "./src/app/components/pages/batch-proposition/batch-proposition.component.html":
+/*!*************************************************************************************!*\
+  !*** ./src/app/components/pages/batch-proposition/batch-proposition.component.html ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<app-header></app-header>\n\n<section class=\"work-agreement\">\n\n  <div class=\"container\">\n\n    <div class=\"agreement-row\">\n\n      <div class=\"col-wrapper\">\n\n        <button class=\"blue btn-left\" mat-button><mat-icon>navigate_before</mat-icon> Назад</button>\n\n        <div class=\"title\">\n          <h1 class=\"h1\">\n            Пакетна пропозиція: документи для розлучення\n          </h1>\n        </div>\n\n        <div class=\"rating-wrapper\">\n          <app-rating></app-rating>\n        </div>\n\n        <div class=\"description-agreement\">\n          Цивільно-правовий договір, за яким одна сторона (підрядник) зобов'язується на свій ризик виконати\n          певну роботу за завданням другої сторони (замовника),\n          а замовник зобов'язується прийняти та оплатити виконану роботу.\n        </div>\n\n        <div class=\"tags\">\n          <app-tags></app-tags>\n        </div>\n\n        <div class=\"buy-subscription\">\n          <p>Придбайте підписку, щоб почати працювати з документом</p>\n\n          <div class=\"action-bay\">\n            <button mat-button>Придбати</button>\n            <a href=\"#\">\n              <img src=\"assets/img/info-ico.svg\" alt=\"\">\n              Що це мені дає?\n            </a>\n          </div>\n\n        </div>\n\n      </div>\n      <div class=\"col-wrapper\">\n\n        <div class=\"img-wrapper\">\n          <div class=\"wrapper\">\n            <div class=\"card\" *ngFor=\"let carditem of bach\">\n              <app-card-item [carditem]=\"carditem\" [configStyle]=\"similarBachStyle\"></app-card-item>\n            </div>\n          </div>\n\n        </div>\n\n        <div class=\"btn-wrapper text-center\">\n          <button mat-button (click)=\"openModal($event)\">\n            <img src=\"assets/img/eye-ico.svg\" alt=\"\">\n            Перегянути\n          </button>\n        </div>\n\n      </div>\n\n      <div class=\"layout\" *ngIf=\"modalIsOpen\" >\n        <div class=\"close-layout\">\n          <i class=\"material-icons\" (click)=\"openModal($event)\">close</i>\n        </div>\n        <div class=\"modal-wrapper\">\n\n          <div class=\"title text-center\">\n            <h1 class=\"h1\">Договір підряду</h1>\n          </div>\n          <div class=\"document-items\">\n\n            <div class=\"arrow-btn\">\n\n              <button mat-fab>\n                <mat-icon>arrow_back</mat-icon>\n              </button>\n\n              Попередній документ\n\n            </div>\n            <!--/arrow-btn-->\n\n            <ul>\n              <li>\n                <img src=\"assets/img/doclarge.jpg\" alt=\"\">\n              </li>\n            </ul>\n            <!--/ul-->\n\n            <div class=\"arrow-btn\">\n\n              <button mat-fab>\n                <mat-icon>arrow_forward</mat-icon>\n              </button>\n\n              Наступний документ\n\n            </div>\n            <!--/arrow-btn-->\n\n          </div>\n          <!--/document-items-->\n        </div>\n        <!--/modal-wrapper-->\n      </div>\n\n    </div>\n\n  </div>\n\n</section>\n<!--/work-agreement-->\n\n<section class=\"similar\">\n\n  <div class=\"container\">\n\n    <div class=\"title text-center\">\n      <h1 class=\"h1\">Інші схожі документи</h1>\n    </div>\n\n    <div class=\"wrapper\">\n      <div class=\"card\" *ngFor=\"let carditem of similar\">\n        <app-card-item [carditem]=\"carditem\" [configStyle]=\"similarStyle\"></app-card-item>\n      </div>\n    </div>\n\n  </div>\n\n</section>\n<!--/similar-->\n\n<section class=\"advice\">\n\n  <div class=\"container\">\n\n    <div class=\"title text-center\">\n      <h1 class=\"h1\">Поради до цього документу</h1>\n    </div>\n\n    <div class=\"wrapper\">\n      <div class=\"card\" *ngFor=\"let carditem of advice\">\n        <app-card-item [carditem]=\"carditem\" [configStyle]=\"carditem.styleOption\" [btn]=\"true\" (opentab)=\"onTab($event)\"></app-card-item>\n      </div>\n    </div>\n\n    <div class=\"wrapper-descriptions\">\n      <span [ngClass]=\"classTab\" class=\"tringle\"></span>\n\n      <div class=\"arrow left\"></div>\n\n      <div class=\"content-wrapper\">\n        <div class=\"title-content\">{{adviceTabTitle}}</div>\n        <div class=\"description-title\">\n          {{adviceTabText}}\n        </div>\n      </div>\n\n      <div class=\"arrow left\"></div>\n\n\n    </div>\n\n  </div>\n\n</section>\n<!--/advice-->\n\n<app-footer></app-footer>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/pages/batch-proposition/batch-proposition.component.ts":
+/*!***********************************************************************************!*\
+  !*** ./src/app/components/pages/batch-proposition/batch-proposition.component.ts ***!
+  \***********************************************************************************/
+/*! exports provided: BatchPropositionComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BatchPropositionComponent", function() { return BatchPropositionComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var BatchPropositionComponent = /** @class */ (function () {
+    function BatchPropositionComponent(title, meta) {
+        this.title = title;
+        this.meta = meta;
+        this.imgpath = 'assets/img/'; // img path
+        this.bach = [
+            {
+                title: "",
+                description: "\u0414\u043E\u0433\u043E\u0432\u0456\u0440 \u043F\u0440\u043E \u043D\u0430\u0434\u0430\u043D\u043D\u044F \u043F\u043E\u0441\u043B\u0443\u0433 \u0437 \u043F\u043E\u0441\u0435\u0440\u0435\u0434\u043D\u0438\u0446\u0442\u0432\u0430 \u0443 \u043F\u0440\u0430\u0446\u0435\u0432\u043B\u0430\u0448\u0442\u0443-\u0432\u0430\u043D\u043D\u0456 \u0437\u0430 \u043A\u043E\u0440\u0434\u043E\u043D\u043E\u043C",
+                additional: [
+                    {
+                        title: "",
+                        path: ""
+                    }
+                ],
+                imgPath: this.imgpath + "document.jpg",
+                cardactions: "",
+            },
+            {
+                title: "",
+                description: "\u0414\u043E\u0433\u043E\u0432\u0456\u0440 \u043F\u0440\u043E \u043D\u0430\u0434\u0430\u043D\u043D\u044F \u043F\u043E\u0441\u043B\u0443\u0433 \u0437 \u043F\u043E\u0441\u0435\u0440\u0435\u0434\u043D\u0438\u0446\u0442\u0432\u0430 \u0443 \u043F\u0440\u0430\u0446\u0435\u0432\u043B\u0430\u0448\u0442\u0443-\u0432\u0430\u043D\u043D\u0456 \u0437\u0430 \u043A\u043E\u0440\u0434\u043E\u043D\u043E\u043C",
+                additional: [
+                    {
+                        title: "",
+                        path: "#"
+                    },
+                ],
+                imgPath: this.imgpath + "document.jpg",
+                cardactions: "",
+            },
+            {
+                title: "",
+                description: "\u0414\u043E\u0433\u043E\u0432\u0456\u0440 \u043F\u0440\u043E \u043D\u0430\u0434\u0430\u043D\u043D\u044F \u043F\u043E\u0441\u043B\u0443\u0433 \u0437 \u043F\u043E\u0441\u0435\u0440\u0435\u0434\u043D\u0438\u0446\u0442\u0432\u0430 \u0443 \u043F\u0440\u0430\u0446\u0435\u0432\u043B\u0430\u0448\u0442\u0443-\u0432\u0430\u043D\u043D\u0456 \u0437\u0430 \u043A\u043E\u0440\u0434\u043E\u043D\u043E\u043C",
+                additional: [
+                    {
+                        title: "",
+                        path: "#"
+                    }
+                ],
+                imgPath: this.imgpath + "document.jpg",
+                cardactions: "",
+            }
+        ];
+        this.similarBachStyle = 'similar-bach-document';
+        this.similar = [
+            {
+                title: "\u0414\u043E\u0433\u043E\u0432\u0456\u0440 \u043F\u043E\u0440\u0443\u043A\u0438",
+                description: "",
+                additional: [
+                    {
+                        title: "",
+                        path: ""
+                    }
+                ],
+                imgPath: this.imgpath + "document.jpg",
+                cardactions: "\u041F\u0435\u0440\u0435\u0439\u0442\u0438",
+            },
+            {
+                title: "\u0414\u043E\u0433\u043E\u0432\u0456\u0440 \u043F\u043E\u0440\u0443\u043A\u0438",
+                description: "",
+                additional: [
+                    {
+                        title: "",
+                        path: "#"
+                    },
+                ],
+                imgPath: this.imgpath + "document.jpg",
+                cardactions: "\u041F\u0435\u0440\u0435\u0439\u0442\u0438",
+            },
+            {
+                title: "\u0414\u043E\u0433\u043E\u0432\u0456\u0440 \u043F\u043E\u0440\u0443\u043A\u0438",
+                description: "",
+                additional: [
+                    {
+                        title: "",
+                        path: "#"
+                    }
+                ],
+                imgPath: this.imgpath + "document.jpg",
+                cardactions: "\u041F\u0435\u0440\u0435\u0439\u0442\u0438",
+            }
+        ];
+        this.similarStyle = 'similar-document';
+        this.advice = [
+            {
+                title: "\u0412\u0430\u0436\u043B\u0438\u0432\u043E \u0437\u043D\u0430\u0442\u0438",
+                description: "\u0422\u0443\u0442 \u0431\u0443\u0434\u0435 \u043E\u043F\u0438\u0441 \u043F\u0440\u0438\u043C\u0456\u0442\u043A\u0438, \u0430\u043B\u0435 \u043D\u0435 \u043F\u043E\u0432\u043D\u0438\u0439. \u0414\u043B\u044F \u043F\u043E\u0432\u043D\u043E\u0433\u043E \u0442\u0440\u0435\u0431\u0430 \u0432\u0456\u0434\u043A\u0440\u0438\u0442\u0438.",
+                additional: [
+                    {
+                        title: "",
+                        path: ""
+                    }
+                ],
+                imgPath: "",
+                cardactions: "\u0414\u0435\u0442\u0430\u043B\u044C\u043D\u0456\u0448\u0435",
+                styleOption: "first"
+            },
+            {
+                title: "\u0429\u043E \u043F\u043E\u0447\u0438\u0442\u0430\u0442\u0438",
+                description: "\u0422\u0443\u0442 \u0431\u0443\u0434\u0435 \u043E\u043F\u0438\u0441 \u043F\u0440\u0438\u043C\u0456\u0442\u043A\u0438, \u0430\u043B\u0435 \u043D\u0435 \u043F\u043E\u0432\u043D\u0438\u0439. \u0414\u043B\u044F \u043F\u043E\u0432\u043D\u043E\u0433\u043E \u0442\u0440\u0435\u0431\u0430 \u0432\u0456\u0434\u043A\u0440\u0438\u0442\u0438.",
+                additional: [
+                    {
+                        title: "",
+                        path: "#"
+                    },
+                ],
+                imgPath: "",
+                cardactions: "\u0414\u0435\u0442\u0430\u043B\u044C\u043D\u0456\u0448\u0435",
+                styleOption: "second"
+            },
+            {
+                title: "\u0417\u0432\u0435\u0440\u043D\u0456\u0442\u044C \u0443\u0432\u0430\u0433\u0443",
+                description: "\u0422\u0443\u0442 \u0431\u0443\u0434\u0435 \u043E\u043F\u0438\u0441 \u043F\u0440\u0438\u043C\u0456\u0442\u043A\u0438, \u0430\u043B\u0435 \u043D\u0435 \u043F\u043E\u0432\u043D\u0438\u0439. \u0414\u043B\u044F \u043F\u043E\u0432\u043D\u043E\u0433\u043E \u0442\u0440\u0435\u0431\u0430 \u0432\u0456\u0434\u043A\u0440\u0438\u0442\u0438.",
+                additional: [
+                    {
+                        title: "",
+                        path: "#"
+                    }
+                ],
+                imgPath: "",
+                cardactions: "\u0414\u0435\u0442\u0430\u043B\u044C\u043D\u0456\u0448\u0435",
+                styleOption: "third"
+            }
+        ];
+        this.adviceTab = [
+            {
+                title: "\u0412\u0430\u0436\u043B\u0438\u0432\u043E \u0437\u043D\u0430\u0442\u0438",
+                description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n          Aliquam asperiores nisi obcaecati, quas similique voluptatum. Ad alias aut, consequatur corporis,\n          doloremque dolores ea eaque error ex iste laborum libero modi nesciunt nobis obcaecati\n          odit omnis optio perspiciatis provident quasi quibusdam quod sequi, sint sit soluta tenetur\n          veritatis voluptatibus!",
+                additional: [
+                    {
+                        title: "",
+                        path: ""
+                    }
+                ],
+                imgPath: "",
+                cardactions: "",
+                styleOption: "first"
+            },
+            {
+                title: "\u0429\u043E \u043F\u043E\u0447\u0438\u0442\u0430\u0442\u0438",
+                description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n          Aliquam asperiores nisi obcaecati, quas similique voluptatum. Ad alias aut, consequatur corporis,\n          doloremque dolores ea eaque error ex iste laborum libero modi nesciunt nobis obcaecati\n          odit omnis optio perspiciatis provident quasi quibusdam quod sequi, sint sit soluta tenetur\n          veritatis voluptatibus! Distinctio facere iste nihil odio vitae. Ad commodi delectus dolores ea enim error\n          est harum id impedit incidunt iste iure laboriosam laborum modi nemo nesciunt provident quae quaerat qui,\n          recusandae suscipit, totam unde. Accusamus asperiores aspernatur at,\n          consequuntur cum ea eum excepturi inventore laborum maiores nulla porro,\n          quaerat quia, quisquam unde veritatis!",
+                additional: [
+                    {
+                        title: "",
+                        path: "#"
+                    },
+                ],
+                imgPath: "",
+                cardactions: "",
+                styleOption: "second"
+            },
+            {
+                title: "\u0417\u0432\u0435\u0440\u043D\u0456\u0442\u044C \u0443\u0432\u0430\u0433\u0443",
+                description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n          Aliquam asperiores nisi obcaecati, quas similique voluptatum. Ad alias aut, consequatur corporis,\n          doloremque dolores ea eaque error ex iste laborum libero modi nesciunt nobis obcaecati\n          odit omnis optio perspiciatis provident quasi quibusdam quod sequi, sint sit soluta tenetur\n          veritatis voluptatibus! Distinctio facere iste nihil odio vitae. Ad commodi delectus dolores ea enim error\n          est harum id impedit incidunt iste iure laboriosam laborum modi nemo nesciunt provident quae quaerat qui,\n          recusandae suscipit, totam unde. Accusamus asperiores aspernatur at,\n          consequuntur cum ea eum excepturi inventore laborum maiores nulla porro,\n          quaerat quia, quisquam unde veritatis! Distinctio facere iste nihil odio vitae. Ad commodi delectus dolores ea enim error\n          est harum id impedit incidunt iste iure laboriosam laborum modi nemo nesciunt provident quae quaerat qui,\n          recusandae suscipit, totam unde. Accusamus asperiores aspernatur at,\n          consequuntur cum ea eum excepturi inventore laborum maiores nulla porro,\n          quaerat quia, quisquam unde veritatis!",
+                additional: [
+                    {
+                        title: "",
+                        path: "#"
+                    }
+                ],
+                imgPath: "",
+                cardactions: "",
+                styleOption: "third"
+            }
+        ];
+        this.classTab = 'first';
+        title.setTitle('Дом юриста - Договір підряду');
+        meta.addTags([
+            { name: 'key', content: 'юриспруденция, договір' },
+            { name: 'description', content: 'Договір підряду' }
+        ]);
+    }
+    BatchPropositionComponent.prototype.ngOnInit = function () {
+        this.onTabContent('first');
+        this.modalIsOpen = false;
+    };
+    // Toggle tabs
+    BatchPropositionComponent.prototype.onTab = function (e) {
+        if (e === 'first') {
+            this.classTab = e;
+        }
+        if (e === 'second') {
+            this.classTab = e;
+        }
+        if (e === 'third') {
+            this.classTab = e;
+        }
+        this.onTabContent(e);
+    };
+    BatchPropositionComponent.prototype.onTabContent = function (e) {
+        var _this = this;
+        this.adviceTab.filter(function (tab) {
+            tab.styleOption === e ? _this.adviceTabTitle = tab.title : tab;
+            tab.styleOption === e ? _this.adviceTabText = tab.description : tab;
+        });
+    };
+    BatchPropositionComponent.prototype.openModal = function (e) {
+        console.log('click', e);
+        this.modalIsOpen = !this.modalIsOpen;
+    };
+    BatchPropositionComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-batch-proposition',
+            template: __webpack_require__(/*! ./batch-proposition.component.html */ "./src/app/components/pages/batch-proposition/batch-proposition.component.html"),
+            styles: [__webpack_require__(/*! ./batch-proposition.component.css */ "./src/app/components/pages/batch-proposition/batch-proposition.component.css")]
+        }),
+        __metadata("design:paramtypes", [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["Title"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["Meta"]])
+    ], BatchPropositionComponent);
+    return BatchPropositionComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/components/pages/consultation/consultation.component.css":
 /*!**************************************************************************!*\
   !*** ./src/app/components/pages/consultation/consultation.component.css ***!
@@ -719,7 +982,7 @@ var ConsultationComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".wrapper {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-between;\r\n}\r\n.wraper-descriptions {\r\n  height: 25.125em;\r\n  width: 100%;\r\n  background-color: #F1F1F1;\r\n  margin: 3em 0;\r\n  position: relative;\r\n  display: flex;\r\n  flex-direction: row;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n  padding: 3em 0;\r\n}\r\n.description-agreement {\r\n  margin-top: 2em;\r\n  width: 80%;\r\n}\r\n.work-agreement {\r\n  background-color: #F1F1F1;\r\n  padding-top: 2.125em;\r\n  /*height: 82vh;*/\r\n  height: 30em;\r\n}\r\n.work-agreement .h1 {\r\n  margin: auto auto .5em;\r\n}\r\n.agreement-row {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-between;\r\n}\r\n.work-agreement .img-wraper {\r\n  width: 18em;\r\n}\r\n.work-agreement .img-wraper img {\r\n  width: 100%;\r\n}\r\n.description-title {\r\n  transition: all .3s;\r\n}\r\n.tags {\r\n  margin-top: 1em;\r\n}\r\n.buy-subscription {\r\n  margin-top: 3em;\r\n}\r\n.buy-subscription p{\r\n  margin-bottom: 1em;\r\n}\r\n.btn-wrapper {\r\n  margin-top: 1em;\r\n}\r\n.btn-wrapper button {\r\n  font-weight: 100;\r\n  color: #0067B8;\r\n  font-size: 1.125em;\r\n}\r\n.btn-wrapper button img {\r\n  width: 1em;\r\n}\r\n.agreement-row .modal-wraper {\r\n  position: absolute;\r\n  left: 50%;\r\n  top: 50%;\r\n  -webkit-transform: translateX(-50%) translateY(-50%);\r\n          transform: translateX(-50%) translateY(-50%);\r\n\r\n}\r\n.agreement-row .modal-wraper .h1 {\r\n  color: white;\r\n}\r\n.agreement-row .modal-wraper .document-items {\r\n  display: flex;\r\n  flex-direction: row;\r\n  align-items: center;\r\n}\r\n.agreement-row .modal-wraper .arrow-btn {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  color: white;\r\n  width: 16em;\r\n}\r\n.agreement-row .modal-wraper .material-icons {\r\n  font-size: 2em;\r\n}\r\n.agreement-row .modal-wraper .mat-fab {\r\n  border: .0625em solid white;\r\n  margin-bottom: 1em;\r\n}\r\n.agreement-row .modal-wraper .mat-fab.mat-accent {\r\n  background-color: transparent;\r\n\r\n}\r\n.agreement-row .modal-wraper li img {\r\n  height: 75vh;\r\n}\r\n.action-bay {\r\n  display: flex;\r\n  align-items: center;\r\n}\r\n.action-bay  button {\r\n  background: #0067B8;\r\n  color: white;\r\n  margin-right: 1em;\r\n}\r\n.action-bay a{\r\n  font-weight: 100;\r\n  text-decoration: underline;\r\n  color: #0067B8;\r\n}\r\n.action-bay img{\r\n  width: .5em;\r\n}\r\n.content-wrapper {\r\n  width: 100%;\r\n  height: 100%;\r\n  padding: 1.5em;\r\n}\r\n.title-content {\r\n  font-size: 1.5em;\r\n  font-family: \"Segoe UI\";\r\n  font-weight: 400;\r\n  margin-bottom: 1em;\r\n}\r\n.tringle {\r\n  position: absolute;\r\n  top: -3.125em;\r\n  width: 0;\r\n  height: 0;\r\n  border-left: 3.125em solid transparent;\r\n  border-right: 3.125em solid transparent;\r\n  border-bottom: 3.125em solid #F1F1F1;\r\n  transition: all .3s;\r\n}\r\n.tringle.first {\r\n  left: 6.250em;\r\n}\r\n.tringle.second {\r\n  left: 31.25em;\r\n\r\n}\r\n.tringle.third {\r\n  right: 7.250em;\r\n}\r\n.arrow {\r\n  width: 1.5em;\r\n  height: 5em;\r\n  background-color: #4A4A4A;\r\n  cursor: pointer;\r\n}\r\n"
+module.exports = ".wrapper {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-between;\r\n}\r\n.wrapper-descriptions {\r\n  height: 25.125em;\r\n  width: 100%;\r\n  background-color: #F1F1F1;\r\n  margin: 3em 0;\r\n  position: relative;\r\n  display: flex;\r\n  flex-direction: row;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n  padding: 3em 0;\r\n}\r\n.description-agreement {\r\n  margin-top: 2em;\r\n  width: 80%;\r\n}\r\n.work-agreement {\r\n  background-color: #F1F1F1;\r\n  padding-top: 2.125em;\r\n  /*height: 82vh;*/\r\n  height: 30em;\r\n}\r\n.work-agreement .h1 {\r\n  margin: auto auto .5em;\r\n}\r\n.agreement-row {\r\n  display: flex;\r\n  flex-direction: row;\r\n  justify-content: space-between;\r\n}\r\n.work-agreement .img-wrapper {\r\n  width: 18em;\r\n}\r\n.work-agreement .img-wrapper img {\r\n  width: 100%;\r\n}\r\n.description-title {\r\n  transition: all .3s;\r\n}\r\n.tags {\r\n  margin-top: 1em;\r\n}\r\n.buy-subscription {\r\n  margin-top: 3em;\r\n}\r\n.buy-subscription p{\r\n  margin-bottom: 1em;\r\n}\r\n.btn-wrapper {\r\n  margin-top: 1em;\r\n}\r\n.btn-wrapper button {\r\n  font-weight: 100;\r\n  color: #0067B8;\r\n  font-size: 1.125em;\r\n}\r\n.btn-wrapper button img {\r\n  width: 1em;\r\n}\r\n.agreement-row .modal-wrapper {\r\n  position: absolute;\r\n  left: 50%;\r\n  top: 50%;\r\n  -webkit-transform: translateX(-50%) translateY(-50%);\r\n          transform: translateX(-50%) translateY(-50%);\r\n\r\n}\r\n.agreement-row .modal-wrapper .h1 {\r\n  color: white;\r\n}\r\n.agreement-row .modal-wrapper .document-items {\r\n  display: flex;\r\n  flex-direction: row;\r\n  align-items: center;\r\n}\r\n.agreement-row .modal-wrapper .arrow-btn {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  color: white;\r\n  width: 16em;\r\n}\r\n.agreement-row .modal-wrapper .material-icons {\r\n  font-size: 2em;\r\n}\r\n.agreement-row .modal-wrapper .mat-fab {\r\n  border: .0625em solid white;\r\n  margin-bottom: 1em;\r\n}\r\n.agreement-row .modal-wrapper .mat-fab.mat-accent {\r\n  background-color: transparent;\r\n\r\n}\r\n.agreement-row .modal-wrapper li img {\r\n  height: 75vh;\r\n}\r\n.action-bay {\r\n  display: flex;\r\n  align-items: center;\r\n}\r\n.action-bay  button {\r\n  background: #0067B8;\r\n  color: white;\r\n  margin-right: 1em;\r\n}\r\n.action-bay a{\r\n  font-weight: 100;\r\n  text-decoration: underline;\r\n  color: #0067B8;\r\n}\r\n.action-bay img{\r\n  width: .5em;\r\n}\r\n.content-wrapper {\r\n  width: 100%;\r\n  height: 100%;\r\n  padding: 1.5em;\r\n}\r\n.title-content {\r\n  font-size: 1.5em;\r\n  font-family: \"Segoe UI\";\r\n  font-weight: 400;\r\n  margin-bottom: 1em;\r\n}\r\n.tringle {\r\n  position: absolute;\r\n  top: -3.125em;\r\n  width: 0;\r\n  height: 0;\r\n  border-left: 3.125em solid transparent;\r\n  border-right: 3.125em solid transparent;\r\n  border-bottom: 3.125em solid #F1F1F1;\r\n  transition: all .3s;\r\n}\r\n.tringle.first {\r\n  left: 6.250em;\r\n}\r\n.tringle.second {\r\n  left: 31.25em;\r\n\r\n}\r\n.tringle.third {\r\n  right: 7.250em;\r\n}\r\n.arrow {\r\n  width: 1.5em;\r\n  height: 5em;\r\n  background-color: #4A4A4A;\r\n  cursor: pointer;\r\n}\r\n"
 
 /***/ }),
 
@@ -730,7 +993,7 @@ module.exports = ".wrapper {\r\n  display: flex;\r\n  flex-direction: row;\r\n  
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-header></app-header>\n\n<section class=\"work-agreement\">\n\n  <div class=\"container\">\n\n    <div class=\"agreement-row\">\n\n      <div class=\"col-wraper\">\n\n        <button class=\"blue btn-left\" mat-button><mat-icon>navigate_before</mat-icon> Назад</button>\n\n        <div class=\"title\">\n          <h1 class=\"h1\">Договір підряду</h1>\n        </div>\n\n        <div class=\"rating-wrapper\">\n          <app-rating></app-rating>\n        </div>\n\n        <div class=\"description-agreement\">\n          Цивільно-правовий договір, за яким одна сторона (підрядник) зобов'язується на свій ризик виконати\n          певну роботу за завданням другої сторони (замовника),\n          а замовник зобов'язується прийняти та оплатити виконану роботу.\n        </div>\n\n        <div class=\"tags\">\n          <app-tags></app-tags>\n        </div>\n\n        <div class=\"buy-subscription\">\n          <p>Придбайте підписку, щоб почати працювати з документом</p>\n\n          <div class=\"action-bay\">\n            <button mat-button>Придбати</button>\n            <a href=\"#\">\n              <img src=\"assets/img/info-ico.svg\" alt=\"\">\n              Що це мені дає?\n            </a>\n          </div>\n\n        </div>\n\n      </div>\n      <div class=\"col-wraper\">\n        <div class=\"img-wraper\">\n          <img src=\"assets/img/doclarge.jpg\" alt=\"\">\n        </div>\n        <div class=\"btn-wrapper text-center\">\n          <button mat-button (click)=\"openModal($event)\">\n            <img src=\"assets/img/eye-ico.svg\" alt=\"\">\n            Перегянути\n          </button>\n        </div>\n      </div>\n\n      <div class=\"layout\" *ngIf=\"modalIsOpen\" >\n        <div class=\"close-layout\">\n          <i class=\"material-icons\" (click)=\"openModal($event)\">close</i>\n        </div>\n        <div class=\"modal-wraper\">\n\n          <div class=\"title text-center\">\n            <h1 class=\"h1\">Договір підряду</h1>\n          </div>\n          <div class=\"document-items\">\n\n            <div class=\"arrow-btn\">\n\n              <button mat-fab>\n                <mat-icon>arrow_back</mat-icon>\n              </button>\n\n              Попередній документ\n\n            </div>\n            <!--/arrow-btn-->\n\n            <ul>\n              <li>\n                <img src=\"assets/img/doclarge.jpg\" alt=\"\">\n              </li>\n            </ul>\n            <!--/ul-->\n\n            <div class=\"arrow-btn\">\n\n              <button mat-fab>\n                <mat-icon>arrow_forward</mat-icon>\n              </button>\n\n              Наступний документ\n\n            </div>\n            <!--/arrow-btn-->\n\n          </div>\n          <!--/document-items-->\n        </div>\n        <!--/modal-wraper-->\n      </div>\n\n    </div>\n\n  </div>\n\n\n\n</section>\n<!--/work-agreement-->\n\n<section class=\"similar\">\n\n  <div class=\"container\">\n\n    <div class=\"title\">\n      <h1 class=\"h1\">Інші схожі документи</h1>\n    </div>\n\n    <div class=\"wrapper\">\n      <div class=\"card\" *ngFor=\"let carditem of similar\">\n        <app-card-item [carditem]=\"carditem\" [configStyle]=\"similarStyle\"></app-card-item>\n      </div>\n    </div>\n\n  </div>\n\n</section>\n<!--/similar-->\n\n<section class=\"advice\">\n\n  <div class=\"container\">\n\n    <div class=\"title\">\n      <h1 class=\"h1\">Поради до цього документу</h1>\n    </div>\n\n    <div class=\"wrapper\">\n      <div class=\"card\" *ngFor=\"let carditem of advice\">\n        <app-card-item [carditem]=\"carditem\" [configStyle]=\"carditem.styleOption\" [btn]=\"true\" (opentab)=\"onTab($event)\"></app-card-item>\n      </div>\n    </div>\n\n    <div class=\"wraper-descriptions\">\n      <span [ngClass]=\"classTab\" class=\"tringle\"></span>\n\n      <div class=\"arrow left\"></div>\n\n      <div class=\"content-wrapper\">\n        <div class=\"title-content\">{{adviceTabTitle}}</div>\n        <div class=\"description-title\">\n          {{adviceTabText}}\n        </div>\n      </div>\n\n      <div class=\"arrow left\"></div>\n\n\n    </div>\n\n  </div>\n\n</section>\n<!--/advice-->\n\n<app-footer></app-footer>\n"
+module.exports = "<app-header></app-header>\n\n<section class=\"work-agreement\">\n\n  <div class=\"container\">\n\n    <div class=\"agreement-row\">\n\n      <div class=\"col-wrapper\">\n\n        <button class=\"blue btn-left\" mat-button><mat-icon>navigate_before</mat-icon> Назад</button>\n\n        <div class=\"title\">\n          <h1 class=\"h1\">Договір підряду</h1>\n        </div>\n\n        <div class=\"rating-wrapper\">\n          <app-rating></app-rating>\n        </div>\n\n        <div class=\"description-agreement\">\n          Цивільно-правовий договір, за яким одна сторона (підрядник) зобов'язується на свій ризик виконати\n          певну роботу за завданням другої сторони (замовника),\n          а замовник зобов'язується прийняти та оплатити виконану роботу.\n        </div>\n\n        <div class=\"tags\">\n          <app-tags></app-tags>\n        </div>\n\n        <div class=\"buy-subscription\">\n          <p>Придбайте підписку, щоб почати працювати з документом</p>\n\n          <div class=\"action-bay\">\n            <button mat-button>Придбати</button>\n            <a href=\"#\">\n              <img src=\"assets/img/info-ico.svg\" alt=\"\">\n              Що це мені дає?\n            </a>\n          </div>\n\n        </div>\n\n      </div>\n      <div class=\"col-wrapper\">\n        <div class=\"img-wrapper\">\n          <img src=\"assets/img/doclarge.jpg\" alt=\"\">\n        </div>\n        <div class=\"btn-wrapper text-center\">\n          <button mat-button (click)=\"openModal($event)\">\n            <img src=\"assets/img/eye-ico.svg\" alt=\"\">\n            Перегянути\n          </button>\n        </div>\n      </div>\n\n      <div class=\"layout\" *ngIf=\"modalIsOpen\" >\n        <div class=\"close-layout\">\n          <i class=\"material-icons\" (click)=\"openModal($event)\">close</i>\n        </div>\n        <div class=\"modal-wrapper\">\n\n          <div class=\"title text-center\">\n            <h1 class=\"h1\">Договір підряду</h1>\n          </div>\n          <div class=\"document-items\">\n\n            <div class=\"arrow-btn\">\n\n              <button mat-fab>\n                <mat-icon>arrow_back</mat-icon>\n              </button>\n\n              Попередній документ\n\n            </div>\n            <!--/arrow-btn-->\n\n            <ul>\n              <li>\n                <img src=\"assets/img/doclarge.jpg\" alt=\"\">\n              </li>\n            </ul>\n            <!--/ul-->\n\n            <div class=\"arrow-btn\">\n\n              <button mat-fab>\n                <mat-icon>arrow_forward</mat-icon>\n              </button>\n\n              Наступний документ\n\n            </div>\n            <!--/arrow-btn-->\n\n          </div>\n          <!--/document-items-->\n        </div>\n        <!--/modal-wrapper-->\n      </div>\n\n    </div>\n\n  </div>\n\n\n\n</section>\n<!--/work-agreement-->\n\n<section class=\"similar\">\n\n  <div class=\"container\">\n\n    <div class=\"title\">\n      <h1 class=\"h1\">Інші схожі документи</h1>\n    </div>\n\n    <div class=\"wrapper\">\n      <div class=\"card\" *ngFor=\"let carditem of similar\">\n        <app-card-item [carditem]=\"carditem\" [configStyle]=\"similarStyle\"></app-card-item>\n      </div>\n    </div>\n\n  </div>\n\n</section>\n<!--/similar-->\n\n<section class=\"advice\">\n\n  <div class=\"container\">\n\n    <div class=\"title\">\n      <h1 class=\"h1\">Поради до цього документу</h1>\n    </div>\n\n    <div class=\"wrapper\">\n      <div class=\"card\" *ngFor=\"let carditem of advice\">\n        <app-card-item [carditem]=\"carditem\" [configStyle]=\"carditem.styleOption\" [btn]=\"true\" (opentab)=\"onTab($event)\"></app-card-item>\n      </div>\n    </div>\n\n    <div class=\"wrapper-descriptions\">\n      <span [ngClass]=\"classTab\" class=\"tringle\"></span>\n\n      <div class=\"arrow left\"></div>\n\n      <div class=\"content-wrapper\">\n        <div class=\"title-content\">{{adviceTabTitle}}</div>\n        <div class=\"description-title\">\n          {{adviceTabText}}\n        </div>\n      </div>\n\n      <div class=\"arrow left\"></div>\n\n\n    </div>\n\n  </div>\n\n</section>\n<!--/advice-->\n\n<app-footer></app-footer>\n"
 
 /***/ }),
 
