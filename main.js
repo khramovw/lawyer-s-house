@@ -342,7 +342,7 @@ module.exports = "\r\n.border-wrapper {\r\n  margin: .75em 0 0;\r\n}\r\n.slide {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<div class=\"border-wrapper\">\n  <ul>\n    <li [ngStyle]=\"{ background: 'url(/assets/img/border2.jpg) no-repeat center top / cover'}\" class=\"slide\">\n      <div class=\"wrapper\">\n        <div class=\"inner\">\n          <div class=\"title\">Новий сервіс - Кадри Online</div>\n          <div class=\"subtitle\">Готуйте повні пакети трудових документів в декілька кліків і повністю Online</div>\n          <button>Детальніше</button>\n        </div>\n      </div>\n    </li>\n  </ul>\n  <div class=\"controls\">\n    <ul>\n      <li class=\"is-active\"></li>\n      <li></li>\n    </ul>\n  </div>\n</div>\n"
+module.exports = "\n<div class=\"border-wrapper\">\n  <ul>\n    <li [ngStyle]=\"{ background: 'url(assets/img/border2.jpg) no-repeat center top / cover'}\" class=\"slide\">\n      <div class=\"wrapper\">\n        <div class=\"inner\">\n          <div class=\"title\">Новий сервіс - Кадри Online</div>\n          <div class=\"subtitle\">Готуйте повні пакети трудових документів в декілька кліків і повністю Online</div>\n          <button>Детальніше</button>\n        </div>\n      </div>\n    </li>\n  </ul>\n  <div class=\"controls\">\n    <ul>\n      <li class=\"is-active\"></li>\n      <li></li>\n    </ul>\n  </div>\n</div>\n"
 
 /***/ }),
 
