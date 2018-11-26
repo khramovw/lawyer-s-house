@@ -41,7 +41,7 @@ module.exports = "\r\n\r\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-home></app-home>\n\n<app-consultation></app-consultation>\n\n<app-contracts></app-contracts>\n\n<app-batch-proposition></app-batch-proposition>\n\n<app-government-agency></app-government-agency>\n\n<app-govermment-search></app-govermment-search>\n\n<app-list-documents></app-list-documents>\n\n\n\n"
+module.exports = "<!--<app-home></app-home>-->\n\n<!--<app-consultation></app-consultation>-->\n\n<!--<app-contracts></app-contracts>-->\n\n<!--<app-batch-proposition></app-batch-proposition>-->\n\n<!--<app-government-agency></app-government-agency>-->\n\n<!--<app-govermment-search></app-govermment-search>-->\n\n<!--<app-list-documents></app-list-documents>-->\n\n<app-knowledge-center></app-knowledge-center>\n\n\n\n"
 
 /***/ }),
 
@@ -120,6 +120,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_pagination_pagination_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./components/pagination/pagination.component */ "./src/app/components/pagination/pagination.component.ts");
 /* harmony import */ var _components_border_border_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./components/border/border.component */ "./src/app/components/border/border.component.ts");
 /* harmony import */ var _components_pages_list_documents_list_documents_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./components/pages/list-documents/list-documents.component */ "./src/app/components/pages/list-documents/list-documents.component.ts");
+/* harmony import */ var _components_pages_knowledge_center_knowledge_center_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./components/pages/knowledge-center/knowledge-center.component */ "./src/app/components/pages/knowledge-center/knowledge-center.component.ts");
+/* harmony import */ var _components_care_service_care_service_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./components/care-service/care-service.component */ "./src/app/components/care-service/care-service.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -137,6 +139,8 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 // Srvices
 
 // Components
+
+
 
 
 
@@ -185,7 +189,9 @@ var AppModule = /** @class */ (function () {
                 _components_search_filter_search_filter_component__WEBPACK_IMPORTED_MODULE_25__["SearchFilterComponent"],
                 _components_pagination_pagination_component__WEBPACK_IMPORTED_MODULE_26__["PaginationComponent"],
                 _components_border_border_component__WEBPACK_IMPORTED_MODULE_27__["BorderComponent"],
-                _components_pages_list_documents_list_documents_component__WEBPACK_IMPORTED_MODULE_28__["ListDocumentsComponent"]
+                _components_pages_list_documents_list_documents_component__WEBPACK_IMPORTED_MODULE_28__["ListDocumentsComponent"],
+                _components_pages_knowledge_center_knowledge_center_component__WEBPACK_IMPORTED_MODULE_29__["KnowledgeCenterComponent"],
+                _components_care_service_care_service_component__WEBPACK_IMPORTED_MODULE_30__["CareServiceComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -464,6 +470,69 @@ var CardItemComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], CardItemComponent);
     return CardItemComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/care-service/care-service.component.css":
+/*!********************************************************************!*\
+  !*** ./src/app/components/care-service/care-service.component.css ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\r\n.care-service {\r\n  height: 23.8125em;\r\n  width: 100%;\r\n  display: flex;\r\n}\r\n.service-wrapp {\r\n  width: 50%;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  padding: 0 6.5em;\r\n  text-align: center;\r\n}\r\n.service-wrapp:nth-child(1) {\r\n  background-color: #DDE6ED;\r\n}\r\n.service-wrapp:nth-child(2) {\r\n  background-color: #E9EEF3;\r\n}\r\n.service-wrapp img{\r\n  height: 5.5625em;\r\n}\r\n.service-wrapp .title {\r\n  font-size: 1.5625em;\r\n  font-weight: 300;\r\n  margin-top: 1.125em;\r\n}\r\n.service-wrapp .subtitle {\r\n  font-size: 1.125em;\r\n  font-weight: 400;\r\n  margin-top: .4375em;\r\n}\r\n.service-wrapp .subtitle, .service-wrapp .title {\r\n  color: #2E2E2E;\r\n}\r\n.service-wrapp button {\r\n  background-color: #0E76BC;\r\n  color: white;\r\n  padding: .6875em 2.5625em;\r\n  margin-top: 2.0625em;\r\n}\r\n"
+
+/***/ }),
+
+/***/ "./src/app/components/care-service/care-service.component.html":
+/*!*********************************************************************!*\
+  !*** ./src/app/components/care-service/care-service.component.html ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n<section class=\"care-service\">\n  <div class=\"service-wrapp\">\n    <img src=\"assets/img/support.svg\" alt=\"\">\n    <div class=\"title\">Потрібна додаткова допомога?</div>\n    <div class=\"subtitle\">Замовляйте консультацію у професійного юриста</div>\n    <button>Детальніше</button>\n  </div>\n  <div class=\"service-wrapp\">\n    <img src=\"assets/img/support2.svg\" alt=\"\">\n    <div class=\"title\">Технічна служба підтримки</div>\n    <div class=\"subtitle\">Виникли питання стосовно роботи сервісів? Зв'яжіться з нашою службою підтримки</div>\n    <button>Детальніше</button>\n  </div>\n</section>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/care-service/care-service.component.ts":
+/*!*******************************************************************!*\
+  !*** ./src/app/components/care-service/care-service.component.ts ***!
+  \*******************************************************************/
+/*! exports provided: CareServiceComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CareServiceComponent", function() { return CareServiceComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var CareServiceComponent = /** @class */ (function () {
+    function CareServiceComponent() {
+    }
+    CareServiceComponent.prototype.ngOnInit = function () {
+    };
+    CareServiceComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-care-service',
+            template: __webpack_require__(/*! ./care-service.component.html */ "./src/app/components/care-service/care-service.component.html"),
+            styles: [__webpack_require__(/*! ./care-service.component.css */ "./src/app/components/care-service/care-service.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], CareServiceComponent);
+    return CareServiceComponent;
 }());
 
 
@@ -2477,6 +2546,456 @@ var HomeComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/components/pages/knowledge-center/knowledge-center.component.css":
+/*!**********************************************************************************!*\
+  !*** ./src/app/components/pages/knowledge-center/knowledge-center.component.css ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\r\n.search-line {\r\n  height: 43.9375em;\r\n  background-color: black;\r\n  position: relative;\r\n}\r\n.search-line::after {\r\n  content: '';\r\n  position: absolute;\r\n  bottom: 0;\r\n  left: 0;\r\n  border-bottom: 1.875em solid white;\r\n  border-left: calc(100vw - 17px) solid transparent;\r\n}\r\n.search-line .wrapper {\r\n  height: 33.125em;\r\n  padding: 0 4em;\r\n  background: linear-gradient( to left, #6AA1F9, #2B52EE);\r\n}\r\n.search-line .wrapper a {\r\n  color: white;\r\n  font-size: .8125em;\r\n  font-weight: 600;\r\n  position: relative;\r\n  padding-left: 1.75em;\r\n  margin-top: 1.25em;\r\n}\r\n.backspace span:nth-child(1) {\r\n  height: .6em;\r\n  width: .6em;\r\n  border-left: 1px solid white;\r\n  border-bottom: 1px solid white;\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 0;\r\n  -webkit-transform: translateY(-50%) rotate(45deg);\r\n          transform: translateY(-50%) rotate(45deg);\r\n}\r\n.backspace span:nth-child(2) {\r\n  width: 1.5em;\r\n  border-top: 1px solid white;\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 0;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n}\r\n.search-line .wrapper .title {\r\n  font-size: 2.5em;\r\n  font-weight: 600;\r\n  color: white;\r\n  margin-top: 1.125em;\r\n}\r\n.search-line .wrapper .subtitle {\r\n  font-size: 1.125em;\r\n  font-weight: 300;\r\n  color: white;\r\n  margin-top: 1em;\r\n  margin-bottom: 1.777em;\r\n}\r\n.mokup {\r\n  bottom: 0;\r\n  left: 50%;\r\n  -webkit-transform: translateX(-50%) translateY(-17%);\r\n          transform: translateX(-50%) translateY(-17%);\r\n  width: 35.5625em;\r\n}\r\n.category-list {\r\n  width: 45.25em;\r\n  min-height: 54.75em;\r\n  margin: 0 auto;\r\n  padding-top: 3.75em;\r\n}\r\n.category-item {\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n.category-item button {\r\n  height: 2.25em;\r\n  margin-bottom: .5625em;\r\n  display: inherit;\r\n  flex-direction: row;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  border-bottom: 1px solid #CCCCCC;\r\n}\r\n.category-item button img {\r\n  width: 1.0265em;\r\n  margin-right: .8554em;\r\n}\r\n.category-item button span:nth-child(1) {\r\n  display: inherit;\r\n  align-items: inherit;\r\n  font-weight: 400;\r\n  font-size: 1.725em;\r\n}\r\n.category-item button span:nth-child(2) {\r\n  display: inline-block;\r\n  width: 1em;\r\n  height: 1em;\r\n  border-left: 2px solid #606060;\r\n  border-bottom: 2px solid #606060;\r\n  -webkit-transform: rotate(-45deg);\r\n          transform: rotate(-45deg);\r\n}\r\n.items-wrapper {\r\n  overflow: hidden;\r\n  max-height: 0;\r\n  transition: all .2s linear;\r\n}\r\n.items-wrapper.is-open {\r\n  max-height: 16em;\r\n  transition: all .2s linear;\r\n}\r\n.items-wrapper li a{\r\n  color: #0E76BC;\r\n  font-size: 1.0625em;\r\n  font-weight: 600;\r\n  height: 2.11764em;\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+
+/***/ }),
+
+/***/ "./src/app/components/pages/knowledge-center/knowledge-center.component.html":
+/*!***********************************************************************************!*\
+  !*** ./src/app/components/pages/knowledge-center/knowledge-center.component.html ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<app-header></app-header>\n\n<section class=\"search-line\">\n  <div class=\"wrapper\">\n    <a href=\"\"><span class=\"backspace\"><span></span><span></span></span>На головну</a>\n    <div class=\"title text-center\">Центр знань</div>\n    <div class=\"subtitle text-center\">Знаходьте відповіді на будь-яке юридичне запитання в одному місці</div>\n    <app-search></app-search>\n  </div>\n  <img class=\"p-absolute mokup\" src=\"assets/img/mokup.png\" alt=\"\">\n</section>\n<section class=\"category-list\">\n  <div class=\"title\">Категорії</div>\n  <ul #category>\n    <li *ngFor=\"let category of categoryItems\" class=\"category-item\">\n      <button class=\"item-btn\" (click)=\"openList($event)\">\n        <span>\n          <img src=\"{{category.icoPath}}\" alt=\"\">\n          {{category.title}}\n        </span>\n        <span></span>\n      </button>\n      <ul class=\"items-wrapper\">\n        <li *ngFor=\"let item of category.items\">\n          <a href=\"{{item.link}}\">{{item.title}}</a>\n        </li>\n      </ul>\n    </li>\n    <!--<li class=\"category-item\">-->\n      <!--<button class=\"item-btn\" (click)=\"openList($event)\">-->\n        <!--<span>-->\n          <!--<img src=\"assets/img/star-ico.svg\" alt=\"\">-->\n          <!--Популярні теми-->\n        <!--</span>-->\n        <!--<span></span>-->\n      <!--</button>-->\n      <!--<ul class=\"items-wrapper\">-->\n        <!--<li><a href=\"#\">Як зареєструвати ТОВ Online?</a></li>-->\n        <!--<li><a href=\"#\">Як зареєструвати ТОВ Online?</a></li>-->\n        <!--<li><a href=\"#\">Як зареєструвати ТОВ Online?</a></li>-->\n        <!--<li><a href=\"#\">Як зареєструвати ТОВ Online?</a></li>-->\n        <!--<li><a href=\"#\">Як зареєструвати ТОВ Online?</a></li>-->\n        <!--<li><a href=\"#\">Як зареєструвати ТОВ Online?</a></li>-->\n        <!--<li><a href=\"#\">Як зареєструвати ТОВ Online?</a></li>-->\n        <!--<li><a href=\"#\">Як зареєструвати ТОВ Online?</a></li>-->\n        <!--<li><a href=\"#\">Як зареєструвати ТОВ Online?</a></li>-->\n        <!--<li><a href=\"#\">Як зареєструвати ТОВ Online?</a></li>-->\n      <!--</ul>-->\n    <!--</li>-->\n    <!--<li class=\"category-item\">-->\n      <!--<button class=\"item-btn\" (click)=\"openList($event)\">-->\n        <!--<span>-->\n          <!--<img src=\"assets/img/small_business_ico.svg\" alt=\"\">-->\n          <!--Для малого бізнесу-->\n        <!--</span>-->\n        <!--<span></span>-->\n      <!--</button>-->\n      <!--<ul class=\"items-wrapper\">-->\n        <!--<li><a href=\"#\">Як зареєструвати ТОВ Online?</a></li>-->\n        <!--<li><a href=\"#\">Як зареєструвати ТОВ Online?</a></li>-->\n        <!--<li><a href=\"#\">Як зареєструвати ТОВ Online?</a></li>-->\n        <!--<li><a href=\"#\">Як зареєструвати ТОВ Online?</a></li>-->\n        <!--<li><a href=\"#\">Як зареєструвати ТОВ Online?</a></li>-->\n        <!--<li><a href=\"#\">Як зареєструвати ТОВ Online?</a></li>-->\n        <!--<li><a href=\"#\">Як зареєструвати ТОВ Online?</a></li>-->\n        <!--<li><a href=\"#\">Як зареєструвати ТОВ Online?</a></li>-->\n        <!--<li><a href=\"#\">Як зареєструвати ТОВ Online?</a></li>-->\n        <!--<li><a href=\"#\">Як зареєструвати ТОВ Online?</a></li>-->\n      <!--</ul>-->\n    <!--</li>-->\n  </ul>\n\n</section>\n\n<app-care-service></app-care-service>\n<app-footer></app-footer>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/pages/knowledge-center/knowledge-center.component.ts":
+/*!*********************************************************************************!*\
+  !*** ./src/app/components/pages/knowledge-center/knowledge-center.component.ts ***!
+  \*********************************************************************************/
+/*! exports provided: KnowledgeCenterComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "KnowledgeCenterComponent", function() { return KnowledgeCenterComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var KnowledgeCenterComponent = /** @class */ (function () {
+    function KnowledgeCenterComponent() {
+        this.path = 'assets/img/';
+        this.categoryItems = [
+            {
+                title: 'Популярні теми',
+                icoPath: this.path + "star-ico.svg",
+                items: [
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                ]
+            },
+            {
+                title: 'Для малого бізнесу',
+                icoPath: this.path + "small_business_ico.svg",
+                items: [
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                ]
+            },
+            {
+                title: 'Для юристів',
+                icoPath: this.path + "professional_lawyer_ico.svg",
+                items: [
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                ]
+            },
+            {
+                title: 'Для сімей',
+                icoPath: this.path + "noun_family_ico.svg",
+                items: [
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                ]
+            },
+            {
+                title: 'Актуально',
+                icoPath: this.path + "noun_Info_ico.svg",
+                items: [
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                ]
+            },
+            {
+                title: 'Консультації експертів',
+                icoPath: this.path + "noun_professional_ico.svg",
+                items: [
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                ]
+            },
+            {
+                title: 'Судові спори',
+                icoPath: this.path + "noun_law_ico.svg",
+                items: [
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                ]
+            },
+            {
+                title: 'Виконавче провадження',
+                icoPath: this.path + "no_law_ico.svg",
+                items: [
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                    {
+                        title: 'Як зареєструвати ТОВ Online?',
+                        link: '#'
+                    },
+                ]
+            },
+        ];
+    }
+    KnowledgeCenterComponent.prototype.ngOnInit = function () {
+    };
+    KnowledgeCenterComponent.prototype.htmlCollToObj = function (e) {
+        return [].slice.call(e);
+    };
+    KnowledgeCenterComponent.prototype.openList = function (e) {
+        this.closesList();
+        if (e.target.parentElement.matches('.item-btn')) {
+            e.toElement.parentElement.nextElementSibling.classList.add('is-open');
+        }
+    };
+    KnowledgeCenterComponent.prototype.closesList = function () {
+        this.htmlCollToObj(this.category.nativeElement.children).filter(function (el) { return el.children[1].classList.remove('is-open'); });
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('category'),
+        __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
+    ], KnowledgeCenterComponent.prototype, "category", void 0);
+    KnowledgeCenterComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-knowledge-center',
+            template: __webpack_require__(/*! ./knowledge-center.component.html */ "./src/app/components/pages/knowledge-center/knowledge-center.component.html"),
+            styles: [__webpack_require__(/*! ./knowledge-center.component.css */ "./src/app/components/pages/knowledge-center/knowledge-center.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], KnowledgeCenterComponent);
+    return KnowledgeCenterComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/components/pages/list-documents/list-documents.component.css":
 /*!******************************************************************************!*\
   !*** ./src/app/components/pages/list-documents/list-documents.component.css ***!
@@ -2484,7 +3003,7 @@ var HomeComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n.head-line {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin-bottom: 1.8125em;\n}\n.search-line {\n  height: 8.125em;\n  width: 100%;\n  margin-bottom: 2.625em;\n  background: linear-gradient(to left, #6AA1F9, #2B52EE);\n  align-items: center;\n  display: flex;\n}\n.search-line .container {\n  width: 100%;\n}\n.count-result, .public-date, .filter-document, .result-doc .subtitle {\n  font-size: 1.125em;\n  font-weight: 300;\n  color: #2D2D2D;\n}\n.result-doc .title {\n  font-size: 1.125em;\n  font-weight: 400;\n  color: #2D2D2D;\n}\n.filter-document {\n  display: flex;\n  align-items: center;\n}\n.filter-document .search-gov-wrapper {\n  margin-left: .6875em;\n}\n.search-gov-wrapper {\n  width: 9em;\n}\n.wrapper {\n  width: 60%;\n}\n.document-row {\n  display: flex;\n  justify-content: space-between;\n  border-bottom: 1px solid #CBCBCB;\n  padding-bottom: 2.1875em;\n  margin-bottom: 1.6875em;\n}\n.result-doc {\n  display: flex;\n}\n.result-doc img {\n  height: 2.75em;\n  margin-right: .9375em;\n}\n.result-tags {\n  padding-left: 4.5em;\n  margin-top: 1.5625em;\n}\n.tags-wrap ul {\n  display: inline-flex;\n  justify-content: flex-start;\n  margin-top: .625em;\n}\n.tags-wrap li {\n  padding: .3125em 1.4375em;\n  background-color: #F3F3F3;\n  font-size: .625em;\n  font-weight: 600;\n  border-radius: .1875em;\n  min-width: 4.5em;\n  text-align: center;\n  color: #2D2D2D;\n  cursor: pointer;\n}\n.tags-wrap li + li {\n  margin-left: .625em;\n}\n.pagination {\n  margin-bottom: 3.5625em;\n  margin-top: 1.0625em;\n}\n.care-service {\n  height: 23.8125em;\n  width: 100%;\n  display: flex;\n}\n.service-wrapp {\n  width: 50%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  padding: 0 6.5em;\n  text-align: center;\n}\n.service-wrapp:nth-child(1) {\n  background-color: #DDE6ED;\n}\n.service-wrapp:nth-child(2) {\n  background-color: #E9EEF3;\n}\n.service-wrapp img{\n  height: 5.5625em;\n}\n.service-wrapp .title {\n  font-size: 1.5625em;\n  font-weight: 300;\n  margin-top: 1.125em;\n}\n.service-wrapp .subtitle {\n  font-size: 1.125em;\n  font-weight: 400;\n  margin-top: .4375em;\n}\n.service-wrapp .subtitle, .service-wrapp .title {\n  color: #2E2E2E;\n}\n.service-wrapp button {\n  background-color: #0E76BC;\n  color: white;\n  padding: .6875em 2.5625em;\n  margin-top: 2.0625em;\n}\n"
+module.exports = "\n.head-line {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin-bottom: 1.8125em;\n}\n.search-line {\n  height: 8.125em;\n  width: 100%;\n  margin-bottom: 2.625em;\n  background: linear-gradient(to left, #6AA1F9, #2B52EE);\n  align-items: center;\n  display: flex;\n}\n.search-line .container {\n  width: 100%;\n}\n.count-result, .public-date, .filter-document, .result-doc .subtitle {\n  font-size: 1.125em;\n  font-weight: 300;\n  color: #2D2D2D;\n}\n.result-doc .title {\n  font-size: 1.125em;\n  font-weight: 400;\n  color: #2D2D2D;\n}\n.filter-document {\n  display: flex;\n  align-items: center;\n}\n.filter-document .search-gov-wrapper {\n  margin-left: .6875em;\n}\n.search-gov-wrapper {\n  width: 9em;\n}\n.wrapper {\n  width: 60%;\n}\n.document-row {\n  display: flex;\n  justify-content: space-between;\n  border-bottom: 1px solid #CBCBCB;\n  padding-bottom: 2.1875em;\n  margin-bottom: 1.6875em;\n}\n.result-doc {\n  display: flex;\n}\n.result-doc img {\n  height: 2.75em;\n  margin-right: .9375em;\n}\n.result-tags {\n  padding-left: 4.5em;\n  margin-top: 1.5625em;\n}\n.tags-wrap ul {\n  display: inline-flex;\n  justify-content: flex-start;\n  margin-top: .625em;\n}\n.tags-wrap li {\n  padding: .3125em 1.4375em;\n  background-color: #F3F3F3;\n  font-size: .625em;\n  font-weight: 600;\n  border-radius: .1875em;\n  min-width: 4.5em;\n  text-align: center;\n  color: #2D2D2D;\n  cursor: pointer;\n}\n.tags-wrap li + li {\n  margin-left: .625em;\n}\n.pagination {\n  margin-bottom: 3.5625em;\n  margin-top: 1.0625em;\n}\n\n"
 
 /***/ }),
 
@@ -2495,7 +3014,7 @@ module.exports = "\n.head-line {\n  display: flex;\n  justify-content: space-bet
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-header></app-header>\n\n<section class=\"search-line\">\n  <div class=\"container\">\n    <app-search></app-search>\n  </div>\n</section>\n<div class=\"container\">\n  <div class=\"head-line\">\n    <div class=\"count-result\">\n      {{'4 646'}} результатів\n    </div>\n    <div class=\"filter-document\">\n      <p>Фільтр:</p>\n      <div *ngFor=\"let item of filterItems\" class=\"search-gov-wrapper\">\n        <div class=\"title\">\n          <p>{{item.title}}</p>\n        </div>\n        <app-search-filter [item]=\"item.items\"  [styleSelct]=\"styleSelct\"></app-search-filter>\n      </div>\n    </div>\n  </div>\n  <!--/head-line-->\n\n  <div class=\"document-row\">\n    <div class=\"wrapper\">\n      <div class=\"result-doc\">\n        <img src=\"assets/img/book.svg\" alt=\"\">\n        <div class=\"description\">\n          <div class=\"title\">Як підготувати якісний юридичний документ</div>\n          <div class=\"subtitle\">Опис: розповіли про те, як готувати якісні юридичні документи</div>\n        </div>\n      </div>\n      <div class=\"result-tags\">\n        <div class=\"title\">Знаходьте більше схожої інформації за цими тегами:</div>\n        <div class=\"tags-wrap\">\n          <ul>\n            <li>Суд</li>\n            <li>Закон</li>\n            <li>Документ</li>\n          </ul>\n        </div>\n      </div>\n    </div>\n    <div class=\"public-date\">\n      Опубліковано: {{ '15.09.2018' }}\n    </div>\n  </div>\n  <!--/document-row-->\n\n  <div class=\"document-row\">\n    <div class=\"wrapper\">\n      <div class=\"result-doc\">\n        <img src=\"assets/img/book.svg\" alt=\"\">\n        <div class=\"description\">\n          <div class=\"title\">Як підготувати якісний юридичний документ</div>\n          <div class=\"subtitle\">Опис: розповіли про те, як готувати якісні юридичні документи</div>\n        </div>\n      </div>\n      <div class=\"result-tags\">\n        <div class=\"title\">Знаходьте більше схожої інформації за цими тегами:</div>\n        <div class=\"tags-wrap\">\n          <ul>\n            <li>Суд</li>\n            <li>Закон</li>\n            <li>Документ</li>\n          </ul>\n        </div>\n      </div>\n    </div>\n    <div class=\"public-date\">\n      Опубліковано: {{ '15.09.2018' }}\n    </div>\n  </div>\n  <!--/document-row-->\n\n  <div class=\"document-row\">\n    <div class=\"wrapper\">\n      <div class=\"result-doc\">\n        <img src=\"assets/img/book.svg\" alt=\"\">\n        <div class=\"description\">\n          <div class=\"title\">Як підготувати якісний юридичний документ</div>\n          <div class=\"subtitle\">Опис: розповіли про те, як готувати якісні юридичні документи</div>\n        </div>\n      </div>\n      <div class=\"result-tags\">\n        <div class=\"title\">Знаходьте більше схожої інформації за цими тегами:</div>\n        <div class=\"tags-wrap\">\n          <ul>\n            <li>Суд</li>\n            <li>Закон</li>\n            <li>Документ</li>\n          </ul>\n        </div>\n      </div>\n    </div>\n    <div class=\"public-date\">\n      Опубліковано: {{ '15.09.2018' }}\n    </div>\n  </div>\n  <!--/document-row-->\n\n  <div class=\"document-row\">\n    <div class=\"wrapper\">\n      <div class=\"result-doc\">\n        <img src=\"assets/img/book.svg\" alt=\"\">\n        <div class=\"description\">\n          <div class=\"title\">Як підготувати якісний юридичний документ</div>\n          <div class=\"subtitle\">Опис: розповіли про те, як готувати якісні юридичні документи</div>\n        </div>\n      </div>\n      <div class=\"result-tags\">\n        <div class=\"title\">Знаходьте більше схожої інформації за цими тегами:</div>\n        <div class=\"tags-wrap\">\n          <ul>\n            <li>Суд</li>\n            <li>Закон</li>\n            <li>Документ</li>\n          </ul>\n        </div>\n      </div>\n    </div>\n    <div class=\"public-date\">\n      Опубліковано: {{ '15.09.2018' }}\n    </div>\n  </div>\n  <!--/document-row-->\n\n</div>\n\n<section class=\"pagination\">\n  <div class=\"container\">\n    <app-pagination [pagination]=\"pagination\"></app-pagination>\n  </div>\n</section>\n\n<section class=\"care-service\">\n  <div class=\"service-wrapp\">\n    <img src=\"assets/img/support.svg\" alt=\"\">\n    <div class=\"title\">Потрібна додаткова допомога?</div>\n    <div class=\"subtitle\">Замовляйте консультацію у професійного юриста</div>\n    <button>Детальніше</button>\n  </div>\n  <div class=\"service-wrapp\">\n    <img src=\"assets/img/support2.svg\" alt=\"\">\n    <div class=\"title\">Технічна служба підтримки</div>\n    <div class=\"subtitle\">Виникли питання стосовно роботи сервісів? Зв'яжіться з нашою службою підтримки</div>\n    <button>Детальніше</button>\n  </div>\n</section>\n\n\n<app-footer></app-footer>\n"
+module.exports = "<app-header></app-header>\n\n<section class=\"search-line\">\n  <div class=\"container\">\n    <app-search></app-search>\n  </div>\n</section>\n<div class=\"container\">\n  <div class=\"head-line\">\n    <div class=\"count-result\">\n      {{'4 646'}} результатів\n    </div>\n    <div class=\"filter-document\">\n      <p>Фільтр:</p>\n      <div *ngFor=\"let item of filterItems\" class=\"search-gov-wrapper\">\n        <div class=\"title\">\n          <p>{{item.title}}</p>\n        </div>\n        <app-search-filter [item]=\"item.items\"  [styleSelct]=\"styleSelct\"></app-search-filter>\n      </div>\n    </div>\n  </div>\n  <!--/head-line-->\n\n  <div class=\"document-row\">\n    <div class=\"wrapper\">\n      <div class=\"result-doc\">\n        <img src=\"assets/img/book.svg\" alt=\"\">\n        <div class=\"description\">\n          <div class=\"title\">Як підготувати якісний юридичний документ</div>\n          <div class=\"subtitle\">Опис: розповіли про те, як готувати якісні юридичні документи</div>\n        </div>\n      </div>\n      <div class=\"result-tags\">\n        <div class=\"title\">Знаходьте більше схожої інформації за цими тегами:</div>\n        <div class=\"tags-wrap\">\n          <ul>\n            <li>Суд</li>\n            <li>Закон</li>\n            <li>Документ</li>\n          </ul>\n        </div>\n      </div>\n    </div>\n    <div class=\"public-date\">\n      Опубліковано: {{ '15.09.2018' }}\n    </div>\n  </div>\n  <!--/document-row-->\n\n  <div class=\"document-row\">\n    <div class=\"wrapper\">\n      <div class=\"result-doc\">\n        <img src=\"assets/img/book.svg\" alt=\"\">\n        <div class=\"description\">\n          <div class=\"title\">Як підготувати якісний юридичний документ</div>\n          <div class=\"subtitle\">Опис: розповіли про те, як готувати якісні юридичні документи</div>\n        </div>\n      </div>\n      <div class=\"result-tags\">\n        <div class=\"title\">Знаходьте більше схожої інформації за цими тегами:</div>\n        <div class=\"tags-wrap\">\n          <ul>\n            <li>Суд</li>\n            <li>Закон</li>\n            <li>Документ</li>\n          </ul>\n        </div>\n      </div>\n    </div>\n    <div class=\"public-date\">\n      Опубліковано: {{ '15.09.2018' }}\n    </div>\n  </div>\n  <!--/document-row-->\n\n  <div class=\"document-row\">\n    <div class=\"wrapper\">\n      <div class=\"result-doc\">\n        <img src=\"assets/img/book.svg\" alt=\"\">\n        <div class=\"description\">\n          <div class=\"title\">Як підготувати якісний юридичний документ</div>\n          <div class=\"subtitle\">Опис: розповіли про те, як готувати якісні юридичні документи</div>\n        </div>\n      </div>\n      <div class=\"result-tags\">\n        <div class=\"title\">Знаходьте більше схожої інформації за цими тегами:</div>\n        <div class=\"tags-wrap\">\n          <ul>\n            <li>Суд</li>\n            <li>Закон</li>\n            <li>Документ</li>\n          </ul>\n        </div>\n      </div>\n    </div>\n    <div class=\"public-date\">\n      Опубліковано: {{ '15.09.2018' }}\n    </div>\n  </div>\n  <!--/document-row-->\n\n  <div class=\"document-row\">\n    <div class=\"wrapper\">\n      <div class=\"result-doc\">\n        <img src=\"assets/img/book.svg\" alt=\"\">\n        <div class=\"description\">\n          <div class=\"title\">Як підготувати якісний юридичний документ</div>\n          <div class=\"subtitle\">Опис: розповіли про те, як готувати якісні юридичні документи</div>\n        </div>\n      </div>\n      <div class=\"result-tags\">\n        <div class=\"title\">Знаходьте більше схожої інформації за цими тегами:</div>\n        <div class=\"tags-wrap\">\n          <ul>\n            <li>Суд</li>\n            <li>Закон</li>\n            <li>Документ</li>\n          </ul>\n        </div>\n      </div>\n    </div>\n    <div class=\"public-date\">\n      Опубліковано: {{ '15.09.2018' }}\n    </div>\n  </div>\n  <!--/document-row-->\n\n</div>\n\n<section class=\"pagination\">\n  <div class=\"container\">\n    <app-pagination [pagination]=\"pagination\"></app-pagination>\n  </div>\n</section>\n\n<app-care-service></app-care-service>\n\n\n<app-footer></app-footer>\n"
 
 /***/ }),
 
